@@ -1,0 +1,2 @@
+rootProject.name = "Lec0930_temperatureConversion"
+include ':app'
