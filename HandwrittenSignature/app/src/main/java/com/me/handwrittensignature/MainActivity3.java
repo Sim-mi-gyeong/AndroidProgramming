@@ -1,4 +1,5 @@
 package com.me.handwrittensignature;
+// Uskilled OR Skilled 선택 페이지
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,28 +13,27 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+
+        Button button1 = (Button)findViewById(R.id.button1);
+        Button button2 = (Button)findViewById(R.id.button2);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ForgerySign_Unskilled.class);
+                startActivity(intent);
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
 
-//public class MainActivity2 extends AppCompatActivity {
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main2);
-//
-//        Button button1 = (Button) findViewById(R.id.button1);
-//        Button button2 = (Button) findViewById(R.id.button2);
-//
-//        button2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent2 = new Intent(getApplicationContext(), MainActivity3.class);
-//                startActivity(intent2);
-//
-//            }
-//
-//        });
-//    }
-//
-//}

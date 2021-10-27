@@ -1,4 +1,5 @@
 package com.me.handwrittensignature;
+// 실제 서명 등록 / 위조 서명 등록 선택 페이지
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,11 +17,19 @@ public class MainActivity2 extends AppCompatActivity {
         Button button1 = (Button) findViewById(R.id.button1);
         Button button2 = (Button) findViewById(R.id.button2);
 
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RealSign.class);
+                startActivity(intent);
+            }
+        });
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = new Intent(getApplicationContext(), MainActivity3.class);
-                startActivity(intent2);
+                Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
+                startActivity(intent);
 
             }
 
