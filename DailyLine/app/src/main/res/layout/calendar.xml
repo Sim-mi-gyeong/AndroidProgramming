@@ -5,4 +5,94 @@
     android:orientation="vertical"
     android:background="#FDF6F0">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+    </CalendarView>
+
+    <TextView
+        android:id="@+id/dailyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:hint="오늘의 구절을 입력하세요."
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/showText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="저장"
+        android:textSize="18sp"
+        android:textColor="#8D8D8D"
+        android:background="@drawable/btn1"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/modifyButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:text="수정"
+            android:textSize="18sp"
+            android:textColor="#8D8D8D"
+            android:background="@drawable/btn2"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/delButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="80dp"
+            android:text="삭제"
+            android:textSize="18sp"
+            android:textColor="#8D8D8D"
+            android:background="@drawable/btn2"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
 </LinearLayout>

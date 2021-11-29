@@ -59,7 +59,6 @@ public class SignIn extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable editable) {
 
-
             }
         });
 //
@@ -91,7 +90,6 @@ public class SignIn extends AppCompatActivity {
 //            }
 //        });
 
-
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -99,8 +97,6 @@ public class SignIn extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
 
     }
 }
