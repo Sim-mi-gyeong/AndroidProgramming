@@ -5,31 +5,48 @@
     android:background="@drawable/signin"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editText_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="30dp"
-        android:ems="12"
-        android:hint="아이디를 입력하세요."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editText_pw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
-        android:ems="12"
-        android:hint="비밀번호를 입력하세요."
-        android:inputType="textPassword"/>
+        <EditText
+            android:id="@+id/editText_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="30dp"
+            android:ems="12"
+            android:hint="아이디를 입력하세요." />
+
+        <EditText
+            android:id="@+id/editText_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:ems="12"
+            android:hint="비밀번호를 입력하세요."
+            android:inputType="textPassword"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="30dp"
+            android:text="자동 로그인"
+            android:textColor="#8D8D8D"/>
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/signin"
-        android:layout_width="130dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/btn1"
         android:elevation="20dp"
         android:shadowRadius="30"

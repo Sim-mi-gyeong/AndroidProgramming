@@ -10,4 +10,7 @@
     <color name="lightBeige">#FDF6F0</color>
     <color name="pinkBeige">#F8E2CF</color>
     <color name="orangeBeige">#F5C6AA</color>
+    <color name="lightPink">#FDEFEF</color>
+    <color name="beige">#F8E2CF</color>
+    <color name="lightYellow">#FEFFE2</color>
 </resources>

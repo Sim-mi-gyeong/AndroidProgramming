@@ -21,6 +21,8 @@
 <!--        인텐트 지정-->
         <activity android:name=".SignIn"/>
         <activity android:name=".SignUp"/>
+        <activity android:name=".Calendar"/>
+        <activity android:name=".TotalFrame"/>
 
     </application>
 
