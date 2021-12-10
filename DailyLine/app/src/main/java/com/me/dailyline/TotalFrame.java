@@ -19,6 +19,7 @@ public class TotalFrame extends AppCompatActivity {
     Fragment1 fragment1;
     Fragment2 fragment2;
     Fragment3 fragment3;
+    BottomNavigationView bottomNavigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,11 +54,21 @@ public class TotalFrame extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Memo chart Tab", Toast.LENGTH_SHORT);
                         getSupportFragmentManager().beginTransaction().replace(R.id.bottom_container, fragment3).commit();
 
+                        return true;
                 }
                 return false;
             }
         });
 
+    }
 
+    public void onTabSelected(int position) {
+        if (position == 0) {
+            bottomNavigation.setSelectedItemId(R.id.tab1);
+        } else if (position == 1) {
+            bottomNavigation.setSelectedItemId(R.id.tab2);
+        } else if (position == 2) {
+            bottomNavigation.setSelectedItemId(R.id.tab3);
+        }
     }
 }
