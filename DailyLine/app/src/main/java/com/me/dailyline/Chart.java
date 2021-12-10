@@ -1,5 +1,5 @@
 package com.me.dailyline;
-
+// 화면 전환 확인
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
