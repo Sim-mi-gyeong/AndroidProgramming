@@ -49,50 +49,100 @@
         android:gravity="center"
         android:visibility="invisible"/>
 
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:text="저장"
-        android:textSize="18sp"
-        android:textColor="#8D8D8D"
-        android:background="@drawable/btn1"
-        android:visibility="invisible"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="저장"
+            android:textSize="18sp"
+            android:textColor="#8D8D8D"
+            android:background="@drawable/btn1"
+            android:visibility="invisible"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/modifyButton"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="수정"
+                android:textSize="18sp"
+                android:textColor="#8D8D8D"
+                android:background="@drawable/btn2"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/delButton"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="80dp"
+                android:text="삭제"
+                android:textSize="18sp"
+                android:textColor="#8D8D8D"
+                android:background="@drawable/btn2"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
 
         <Button
-            android:id="@+id/modifyButton"
+            android:id="@+id/memoButton"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="80dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:text="수정"
-            android:textSize="18sp"
+            android:text="메모"
+            android:textSize="14sp"
             android:textColor="#8D8D8D"
-            android:background="@drawable/btn2"
-            android:visibility="invisible"/>
+            android:background="@drawable/btn3"/>
 
         <Button
-            android:id="@+id/delButton"
+            android:id="@+id/chartButton"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="80dp"
-            android:text="삭제"
-            android:textSize="18sp"
+            android:text="통계"
+            android:textSize="14sp"
             android:textColor="#8D8D8D"
-            android:background="@drawable/btn2"
-            android:visibility="invisible"/>
+            android:background="@drawable/btn3"/>
+
+        <Button
+            android:id="@+id/listButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="목록"
+            android:textSize="14sp"
+            android:textColor="#8D8D8D"
+            android:background="@drawable/btn3"/>
+
 
     </LinearLayout>
+
 
 </LinearLayout>

@@ -45,10 +45,12 @@ public class TotalFrame extends AppCompatActivity {
                     case R.id.tab1:
                         Toast.makeText(getApplicationContext(), "Calendar Tab", Toast.LENGTH_SHORT);
                         getSupportFragmentManager().beginTransaction().replace(R.id.bottom_container, fragment1).commit();
+                        return true;
 
                     case R.id.tab2:
                         Toast.makeText(getApplicationContext(), "Memo chart Tab", Toast.LENGTH_SHORT);
                         getSupportFragmentManager().beginTransaction().replace(R.id.bottom_container, fragment2).commit();
+                        return true;
 
                     case R.id.tab3:
                         Toast.makeText(getApplicationContext(), "Memo chart Tab", Toast.LENGTH_SHORT);

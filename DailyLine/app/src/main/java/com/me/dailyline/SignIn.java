@@ -106,8 +106,8 @@ public class SignIn extends AppCompatActivity {
                 // 아이디와 비밀번호가 사용자 정보와 일치한지 확인 한 후
                 // 일치하는 경우에만 intent 실행 -> toast Message로 '로그인 되었습니다'
                 // 일치하지 않는 경우에는 intent 실행 X -> toast Message로 '회원 정보를 확인하세요.'
-//                Intent intent = new Intent(getApplicationContext(), Calendar.class);
-                Intent intent = new Intent(getApplicationContext(), TotalFrame.class);
+                Intent intent = new Intent(getApplicationContext(), Calendar.class);
+//                Intent intent = new Intent(getApplicationContext(), TotalFrame.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), "로그인 되었습니다.", Toast.LENGTH_LONG).show();
             }
